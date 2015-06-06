@@ -63,3 +63,11 @@ An overall life goal. This is freeform, and you can only have three active at a 
 - `meaning`
 - `progress_percent`
 - `active` (bool)
+
+## Further reading
+- http://www.fastcompany.com/3040387/how-i-get-it-done/how-a-life-audit-helps-you-do-what-you-really-want-to-do
+- http://www.fastcompany.com/3044043/most-creative-people/stanfords-most-popular-class-isnt-computer-science-its-something-much-m
+- http://designyourlife.com.au/
+- https://www.coach.me/
+- https://www.happier.com/
+- https://www.senseapp.com
