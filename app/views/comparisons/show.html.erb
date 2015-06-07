@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Winning habit:</strong>
+  <%= @comparison.winning_habit_id %>
+</p>
+
+<p>
+  <strong>Habit id 1:</strong>
+  <%= @comparison.habit_id_1 %>
+</p>
+
+<p>
+  <strong>Habit id 2:</strong>
+  <%= @comparison.habit_id_2 %>
+</p>
+
+<%= link_to 'Edit', edit_comparison_path(@comparison) %> |
+<%= link_to 'Back', comparisons_path %>

@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :comparisons
+
   resources :categories
 
   resources :habits

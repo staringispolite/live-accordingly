@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  winning_habit_id: 1
+  habit_id_1: 1
+  habit_id_2: 1
+
+two:
+  winning_habit_id: 1
+  habit_id_1: 1
+  habit_id_2: 1
