@@ -36,24 +36,24 @@ Comparing only two goals at a time helps you get clarity on how to prioritize am
 *Rough prioritization algorithm*: For every pair of goals in all categories: the user has to pick one goal to "win" over the other. A goal gets one point if it wins, 0 if it loses.
 
 - `id`
-- `winning_goal_id`
-- `goal_id_1`
-- `goal_id_2`
+- `winning_habit_id`
+- `habit_id_1`
+- `habit_id_2`
 
 ### Checkin
 At the end of my day (or throughout the day) I'd do some of the things I said make me happy. When I'm done doing one of those things, I'll check in. The app will remember what I've done, and show me how I'm doing vs what I told it makes me happy.
 
 - `id`
-- `aspect_id`
-- `time`
+- `habit_id`
+- `time` (datetime)
 - `happiness_score` 1-5, to help train the app - and yourself - whether it *actually* makes you happy
 
 ### Daily happiness
 The typical subjective happiness test it to ping yourself randomly throughout the day, and ask "how happy are you right now? 1-5". The app can use this to tell things like "you're happiest in the mornings", or "you're happiest on days you wrote in the morning"
 
 - `id`
-- `time (datetime)`
-- `score`
+- `time` (datetime)
+- `happiness_score`
 
 ### Goal
 An overall life goal. This is freeform, and you can only have three active at a time. Examples would be "Run a marathon", "establish a healthy nighttime routine". They wouldn't be connected to aspects or routines, but we can check in on them periodically. Happiness = progress toward meaningful goals.
