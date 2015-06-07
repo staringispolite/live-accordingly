@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  habit_id: 1
+  time: 2015-06-06 17:51:50
+  happiness_score: 1
+
+two:
+  habit_id: 1
+  time: 2015-06-06 17:51:50
+  happiness_score: 1
