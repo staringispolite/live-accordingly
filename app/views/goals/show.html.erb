@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @goal.name %>
+</p>
+
+<p>
+  <strong>Meaning:</strong>
+  <%= @goal.meaning %>
+</p>
+
+<p>
+  <strong>Progress percent:</strong>
+  <%= @goal.progress_percent %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @goal.is_active %>
+</p>
+
+<%= link_to 'Edit', edit_goal_path(@goal) %> |
+<%= link_to 'Back', goals_path %>
