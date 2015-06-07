@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150607005150) do
+ActiveRecord::Schema.define(version: 20150607005259) do
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -31,6 +31,13 @@ ActiveRecord::Schema.define(version: 20150607005150) do
     t.integer  "winning_habit_id"
     t.integer  "habit_id_1"
     t.integer  "habit_id_2"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "daily_happinesses", force: true do |t|
+    t.datetime "time"
+    t.string   "happiness_score"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,0 +1,25 @@
+<%= form_for(@daily_happiness) do |f| %>
+  <% if @daily_happiness.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@daily_happiness.errors.count, "error") %> prohibited this daily_happiness from being saved:</h2>
+
+      <ul>
+      <% @daily_happiness.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :time %><br>
+    <%= f.datetime_select :time %>
+  </div>
+  <div class="field">
+    <%= f.label :happiness_score %><br>
+    <%= f.text_field :happiness_score %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
